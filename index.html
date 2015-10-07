@@ -1,0 +1,351 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Web App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/dw-theme.css" rel="stylesheet" type="text/css"/>
+<link href="styles/custom.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	if (navigator.userAgent.match(/(iPad.*|iPhone.*|iPod.*);.*CPU.*OS 7_\d/i)) {
+		$("body").addClass("ios7");
+		$("body").append('');
+	}
+}); 
+</script>
+</head> 
+<body> 
+
+<div id="page" data-role="page" data-theme="b">
+	<div data-role="header" data-theme="b">
+	  <div class="logo"><img src="images/treasure_hunt_logo.png" width="300" height="96" alt=""/></div>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-theme="c">
+			<li><a href="#who">Who</a></li>
+            <li><a href="#what">What</a></li>
+			<li><a href="#where">Where</a></li>
+			<li><a href="#when">When</a></li>
+			<li><a href="#why">Why</a></li>
+                    <li><a href="#how">How</a></li>
+                    <li><a href="#survey">Survey</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-theme="b">
+		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+	</div>
+</div>
+
+<div id="who" data-role="page" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b">
+		<h1>Who</h1>
+	</div>
+	<div data-role="content"> 
+	  <p>... is behind this marvelous event you ask? And more importantly, who gets to go on the Hunt? All your questions are answered below!</p>
+	  <h3>Treasure Hunters</h3>
+		<p>The	Leisure	Treasure Hunt is open to all&mdash;and that includes you! 
+		  This annual event is truly one for the people and by the people. Designated treasures are nominated in by guests of the Landon Hotel throughout the summer with the Hunt scheduled for the fall. </p>
+		<h3>Sponsors</h3>
+		<p>The primary sponsor of the Leisure Treasure Hunt is, of course, the Landon Hotel itself. Please support all of our sponsors.		</p>
+
+        <ul data-role="listview" data-inset="true">
+        <li><a href="#"><img src="images/the-landon-hotel-logo.png" alt="The Landon Hotel"/>
+          <h3>The Landon Hotel</h3>
+          <p>Special rates for Treasure Hunters</p>
+          </a></li>
+        <li><a href="#"><img src="images/EC0210_logo.gif" alt="Explore California"/>
+          <h3>Explore California</h3>
+          <p>Experience it all.</p>
+          </a></li>
+        <li><a href="#"><img src="images/kinetEco_logo.png" alt="KinetEco"/>
+          <h3>KinetEco</h3>
+          <p>Solar energy now.</p>
+          </a></li>
+        <li><a href="#"><img src="images/wisdom_pet_logo_single.png" alt="Wisdom Pet Medicine"/>
+          <h3>Wisdom Pet Medicine</h3>
+          <p>We treat your pets like our own.</p>
+          </a></li>
+      </ul>
+	</div>
+	<div data-role="footer" data-theme="b">
+		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+	</div>
+</div>
+
+<div id="what" data-role="page" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b">
+		<h1>What</h1>
+	</div>
+	<div data-role="content">	
+		<p>The Leisure Treasure Hunt, the Landon Hotel's premium fun-time event, held every October when the air is crisp and the treasure hunting is optimal!</p>
+	  <ul data-role="listview" data-inset="true">
+		  <li><a href="#previous-hunt" data-transition="flip">Previous Hunt</a></li>
+		  <li><a href="#upcoming-hunt" data-transition="flip">Upcoming Hunt</a></li>
+		  <li><a href="#prizes" data-transition="flip"">Prizes</a></li>
+		  <li><a href="#rules" data-transition="flip">Rules</a></li>
+	  </ul>
+	</div>
+	<div data-role="footer" data-theme="b">
+		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+	</div>
+</div>
+
+<div id="where" data-role="page" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b">
+		<h1>Where</h1>
+	</div>
+	<div data-role="content">	
+		<p>Shhhhh! It's a secret... for now! The location will be announced very soon.</p>
+	</div>
+	<div data-role="footer" data-theme="b">
+	  <h4>Leisure Treasure Hunt &copy; 2014</h4>
+	</div>
+</div>
+
+<div data-role="page" id="when" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b">
+		<h1>When</h1>
+	</div>
+  <div data-role="content">	
+    <p>The Leisure Treasure Hunt is held every October when the air is crisp and the treasure hunting is optimal!</p>
+      <p>Here are the details on this year's upcoming event:</p>
+        <ul>
+          <li>Saturday, October 18th and Sunday, October 19th</li>
+          <li>9am to 5pm</li>
+          <li>Entries must be submitted by midnight, October 19th</li>
+          <li>Winners will be announced Halloween, October 31st</li>
+        </ul>
+  </div>
+	<div data-role="footer" data-theme="b">
+		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+	</div>
+</div>
+
+<div id="why" data-role="page" data-theme="b" data-add-back-btn="true">
+  <div data-role="header" data-theme="b">
+    <h1>Why</h1>
+  </div>
+  <div data-role="content">
+    <p>Because we all deserve some fun and adventure in our lives. </p>
+    <p>Because solving riddles stretches the mind and engages the spirit. </p>
+    <p>Because Leisure Treasure Hunt donates all proceeds to local charities. </p>
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  </div>
+</div>
+
+<div id="previous-hunt" data-role="page" data-theme="b" data-add-back-btn="true">
+  <div data-role="header" data-theme="b">
+    <h1>Previous Hunt</h1>
+  </div>
+  <div data-role="content">
+    <p>To prepare for the Hunt, it's best to study the clues (and the treasures they lead to!) from previous games. Here's a few from last year's Hunt in Tompkins Square Park:</p>
+    <h4>Taxi! Forever...</h4>
+    <p><img src="images/taxi_hailer.jpg"/></p>
+    <h4>First Runner on Break</h4>
+    <p><img src="images/first_run_participant.JPG"/></p>
+    <h4>Ms. Charity</h4>
+    <p><img src="images/ms_charity.jpg"/></p>
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  </div>
+</div>
+
+<div id="prizes" data-role="page" data-theme="b" data-add-back-btn="true">
+  <div data-role="header" data-theme="b">
+    <h1>Prizes</h1>
+  </div>
+  <div class="ui-grid-a">
+      <ul class="ui-block-a">
+        <li>The Landon Hotel dinner</li>
+        <li>The Landon Hotel weekend</li>
+        <li>Explore California tour</li>
+      </ul>
+      <ul class="ui-block-b">
+        <li>Case of H+ Sports</li>
+        <li>Roux Academy Art course </li>
+        <li>Wisdom Pet Medicine Gift Certificate</li>
+      </ul>
+  </div>
+<div data-role="footer" data-theme="b">
+    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  </div>
+</div>
+
+<div id="upcoming-hunt" data-role="page" data-theme="b" data-add-back-btn="true">
+  <div data-role="header" data-theme="b">
+    <h1>Upcoming Hunt</h1>
+  </div>
+  <p>Let the Hunt begin! Open your clues one at a time.</p>
+  <div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+    <div data-role="collapsible" data-collapsed="false">
+      <h3>Clue #1</h3>
+      <p>Clue #1 Content</p>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>Clue #2</h3>
+      <p>Clue #2 Content</p>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>Clue 3</h3>
+      <p>Clue #3 Content</p>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  </div>
+</div>
+
+<div id="rules" data-role="page" data-theme="b" data-add-back-btn="true">
+  <div data-role="header" data-theme="b">
+    <h1>Rules</h1>
+  </div>
+  <p>Rules. Not everyone's favorite, we'll admit. But still, you gotta have 'em - and here are ours:</p>
+  <ul data-role="listview" data-theme="c">
+    <li data-role="list-divider">Who can Enter</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum turpis elementum augue ornare posuere. Phasellus sit amet dolor in mi hendrerit fringilla tempor at nisi. Ut dignissim vel felis tristique tempus. Donec tempus, turpis at cursus imperdiet, enim metus scelerisque augue, nec lobortis lacus augue gravida enim. Donec faucibus est sit amet ornare volutpat. Mauris id sem pellentesque, egestas est elementum, ornare magna. </li>
+    <li data-role="list-divider">How to Play</li>
+    <li>Mauris id sem pellentesque, egestas est elementum, ornare magna. Morbi tincidunt faucibus malesuada. Morbi ac semper lacus. Sed tristique tempus diam ac viverra. Vivamus vel faucibus massa. Suspendisse porta sed ipsum eget lobortis</li>
+    <li data-role="list-divider">How Winners are Chosen</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum turpis elementum augue ornare posuere. Phasellus sit amet dolor in mi hendrerit fringilla tempor at nisi. Ut dignissim vel felis tristique tempus. </li>
+  </ul>
+  <div data-role="footer" data-theme="b">
+    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  </div>
+</div>
+
+<div id="how" data-role="page" data-theme="b" data-add-back-btn="true">
+  <div data-role="header" data-theme="b">
+    <h1>How</h1>
+  </div>
+    <p>How do I get in on all this fabulousness you ask? Just fill out our entry form below!</p>
+    <form method="post" action="" id="userForm">
+      <div data-role="fieldcontain">
+        <label for="name">Name:</label>
+        <input name="name" type="text" autofocus required id="name" value=""  />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="email">Email:</label>
+        <input name="email" type="email" required id="email" value=""  />
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <legend>Where are you from? (Check all that apply.)</legend>
+          <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_0" title="Hotel Guest" value="guest" />
+          <label for="fromCheckbox_0">Hotel Guest</label>
+          <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_1" title="Local Resident" value="local" />
+          <label for="fromCheckbox_1">Local Resident</label>
+          <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_2" title="Area Visitor" value="area-visitor" />
+          <label for="fromCheckbox_2">Area Visitor</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>T-Shirt Size:</legend>
+          <input name="tshirtRadio" type="radio" id="tshirtRadio_0" title="Small" value="small" />
+          <label for="tshirtRadio_0">Small</label>
+          <input name="tshirtRadio" type="radio" id="tshirtRadio_1" title="Medium" value="medium" checked />
+          <label for="tshirtRadio_1">Medium</label>
+          <input name="tshirtRadio" type="radio" id="tshirtRadio_2" title="Large" value="large" />
+          <label for="tshirtRadio_2">Large</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="experienceSelect" class="select">Ever been on a Leisure Treasure Hunt?</label>
+        <select name="experienceSelect" id="experienceSelect">
+          <option value="" selected>Choose one...</option>
+          <option value="never">Never before!</option>
+          <option value="last-year">Last year was great!</option>
+          <option value="many">Many times!</option>
+        </select>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="nextSelect" class="select">Where next?</label>
+        <select name="nextSelect" id="nextSelect" data-native-menu="false">
+          <optgroup label="North America">
+            <option value="ny">New York</option>
+            <option value="la">Los Angeles</option>
+            <option value="montreal">Montreal</option>
+            <option value="quebec">Quebec</option>
+            <option value="sf">San Francisco</option>
+          </optgroup>
+          <optgroup label="South America">
+            <option value="ba">Buonos Aires</option>
+            <option value="cancun">Cancun</option>
+            <option value="mc">Mexico City</option>
+            <option value="sp">Sao Paolo</option>
+          </optgroup>
+        </select>
+      </div>
+    </form>
+   <div data-role="footer" data-theme="b">
+    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  </div>
+</div>
+  
+
+
+<div data-role="page" id="survey" data-theme="b" data-add-back-btn="true">
+<div data-role="header" data-theme="b">
+  <h1>Survey</h1>
+</div>
+<div data-role="content">
+<p>Thanks for taking our survey!</p>
+<form id="surveyForm" action="">
+<div data-role="fieldcontain">
+  <label for="nameText">Name:</label>
+  <input type="text" name="nameText" id="nameText" value=""  />
+</div>
+<div data-role="fieldcontain">
+  <label for="emailSurvey">Email:</label>
+  <input type="email" name="emailSurvey" id="emailSurvey" value=""  />
+  <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+      <legend>Do you plan on attending?</legend>
+      <input name="attendingRadio" type="radio" id="attendingRadio_0" title="Yes" value="yes" />
+      <label for="attendingRadio_0">Yes, absolutely!</label>
+      <input name="attendingRadio" type="radio" id="attendingRadio_1" title="No" value="no" />
+      <label for="attendingRadio_1">No, I'm afraid not.</label>
+      <input name="attendingRadio" type="radio" id="attendingRadio_2" title="Not Sure" value="not-sure" />
+      <label for="attendingRadio_2">I'm not sure yet.</label>
+    </fieldset>
+  </div>
+  <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+      <legend>How did you hear about the hunt? (Check all that apply.)</legend>
+      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_0" title="Family" value="family" />
+      <label for="hearCheckbox_0">Family</label>
+      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_1" title="Friend" value="friend" />
+      <label for="hearCheckbox_1">Friend</label>
+      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_2" title="Ad" value="ad" />
+      <label for="hearCheckbox_2">Print Ad</label>
+      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_3" title="Web" value="web" />
+      <label for="hearCheckbox_3">Web</label>
+    </fieldset>
+  </div>
+  <div data-role="fieldcontain">
+    <label for="slider">How excited are you about the Hunt?</label>
+    <input type="range" name="slider" id="slider" value="5" min="0" max="10" />
+  </div>
+  <div data-role="fieldcontain">
+    <label for="flipswitch">May we contact you?</label>
+    <select name="flipswitch" id="flipswitch" data-role="slider">
+      <option value="yes">Yes</option>
+      <option value="no" selected>No</option>
+    </select>
+  </div>
+</div>
+<input name="submitSurvey" type="submit" id="submitSurvey" value="Submit Survey" data-icon="star" /></form>
+</div>
+<div data-role="footer" data-theme="b">
+  <h4>Leisure Treasure Hunt &copy; 2014</h4>
+</div>
+</div>
+</body>
+</html>
